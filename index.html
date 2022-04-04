@@ -25,12 +25,28 @@
 
     <script type="text/babel">
       const Banner = () => {
+        const title = "Welcome to my website";
+        const subtitle = "this is a website for learning react";
+        const address = "http://www.yandex.ru";
         return (
           <div className="banner">
-            <p>banner</p>
+            <h2>{title.toUpperCase()}</h2>
+            <p>{subtitle}</p>
+            <p>Сегодня: {new Date().toDateString()}</p>
+            <p>Случайное число: {Math.random() * 100}</p>
+            <a href={address}>Link</a>
           </div>
           // В JSX для обозначения класса используют className
+
           // Должен быть только один родительский элемент, например один div
+
+          // Переменную можно объявить в теле функции, а затем через фигурные скобки
+          // вставить в нужном месте шаблона
+
+          // Можно добавить метод JS например к title добавили метод toUpperCase()
+          // и он стал написан заглавными буквами.
+
+          // Атрибуты к тегам можно указывать сразу в фигурных скобках без кавычек.
         );
       };
 
