@@ -22,17 +22,19 @@
     <footer>
       <p>footer</p>
     </footer>
-    
+
     <script type="text/babel">
       const Banner = () => {
         return (
-          <div>
+          <div className="banner">
             <p>banner</p>
           </div>
+          // В JSX для обозначения класса используют className
+          // Должен быть только один родительский элемент, например один div
         );
       };
 
-      ReactDom.render(<Banner />, document.getElementById('banner'));
+      ReactDOM.render(<Banner />, document.getElementById("banner"));
     </script>
   </body>
 </html>
